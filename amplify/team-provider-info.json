@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-icegainz-dev-113312-authRole",
+      "UnauthRoleArn": "arn:aws:iam::451988398869:role/amplify-icegainz-dev-113312-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::451988398869:role/amplify-icegainz-dev-113312-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-icegainz-dev-113312-deployment",
+      "UnauthRoleName": "amplify-icegainz-dev-113312-unauthRole",
+      "StackName": "amplify-icegainz-dev-113312",
+      "StackId": "arn:aws:cloudformation:us-east-1:451988398869:stack/amplify-icegainz-dev-113312/6b227640-20c9-11ee-b43b-0ea97d7fed9d",
+      "AmplifyAppId": "dns6op0hq9nls"
+    },
+    "categories": {
+      "auth": {
+        "icegainza9dbb325": {}
+      },
+      "api": {
+        "amplifyDatasource": {}
+      },
+      "storage": {
+        "productimages": {}
+      }
+    }
+  }
+}

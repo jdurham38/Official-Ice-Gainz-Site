@@ -1,0 +1,58 @@
+type Task @model @auth(rules: [{ allow: owner, operations: [create, read, update] }]) {
+  id: ID!
+  title: String!
+  description: String
+  status: String
+}
+
+type Note @model @auth(rules: [{ allow: owner, operations: [create, read, update] }]) {
+  id: ID!
+  content: String!
+}
+
+type Post @model @auth(rules: [{ allow: owner, operations: [create, read, update] }])
+
+{
+  id: ID!
+  title: String!
+  status: PostStatus!
+  rating: Int
+  content: String
+}
+
+enum PostStatus {
+  ACTIVE
+  INACTIVE
+}
+
+type Product @model @auth(rules: [{ allow: owner, operations: [create, read, update, delete] }])
+
+{
+  id: ID!
+  name: String!
+  description: String
+  nutritionalfacts: String
+  collection: String
+  price: Float
+  image: String
+  inventory: Int
+  type: String
+  productId: ID
+}
+
+type User @model 
+  @auth(rules: [{ allow: owner, operations: [create, read, update] }])
+{
+  id: ID!
+  userName: String!
+  password: String!
+  email: String!
+  firstName: String!
+  lastName: String!
+  phoneNumber: String!
+  address: String!
+  city: String!
+  postalCode: String!
+  role: String!
+  userId: ID!
+}
